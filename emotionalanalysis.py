@@ -20,10 +20,10 @@ import time
 #%matplotlib notebook                      # In jupyter run this line to get an interactive plot
 
 
-ndf1=pd.read_csv('dashboard-emotional-analysis/dataset/anger-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
-ndf2=pd.read_csv('dashboard-emotional-analysis/dataset/fear-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
-ndf3=pd.read_csv('dashboard-emotional-analysis/dataset/joy-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
-ndf4=pd.read_csv('dashboard-emotional-analysis/dataset/sadness-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
+ndf1=pd.read_csv('dataset/anger-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
+ndf2=pd.read_csv('dataset/fear-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
+ndf3=pd.read_csv('dataset/joy-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
+ndf4=pd.read_csv('dataset/sadness-ratings-0to1.train.txt',sep='\t',names=['ind','text','emotion','int'])
 df1 = ndf1.append(ndf2).append(ndf3).append(ndf4)
 #df1.pop('ind')
 df1=df1.sample(frac=1)
