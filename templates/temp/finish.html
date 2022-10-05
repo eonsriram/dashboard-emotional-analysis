@@ -1,0 +1,13 @@
+  
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<div class="container">
+<h1 class="text-center display-4">Congratulations!!!</h1><hr>
+<h4 class="text-center text-muted">You have won the treasure!</h4>
+<br><br><br><br>
+<p class="text-center text-muted"><a href="https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F000%2F091%2FTrollFace.jpg" target="_blank"> Collect your treasure here.</a> </p>
+<br><br><br><br><br><br><br><br><br><br>
+<p class="text-center text-muted"> <a href= "{{url_for('home')}}">Home Page </a> </p>
+</div>
+{% endblock %}
